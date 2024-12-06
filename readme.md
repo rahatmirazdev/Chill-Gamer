@@ -17,10 +17,7 @@ Build Chill Gamer, a user-friendly game review application. The goal of this pro
 - **Client-Side Hosting**: Hosted on Firebase.
 - **Server-Side Hosting**: Hosted on Vercel.
 
-## Environment Variables
-- Firebase config keys and MongoDB credentials are hidden using environment variables.
-
-## Main Requirements
+## Main Requirements Added
 - **Navbar**: Includes website name/logo, Home, All Reviews, Add Review, My Reviews, Game WatchList, Login/Register, and User Avatar with Log Out option.
 - **Home Page**: Contains a banner/slider, highest-rated game section, and two extra sections.
 - **Authentication**: Secure login and registration with email and password, including Google login.
@@ -30,16 +27,6 @@ Build Chill Gamer, a user-friendly game review application. The goal of this pro
 - **My Reviews Page**: Displays reviews added by the logged-in user in a table format with update and delete options.
 - **Update Review Page**: Allows users to update their previously submitted reviews.
 - **Game Watchlist Page**: Displays the user's watchlist in a table format.
-
-## GitHub Commits
-- **Client Side**: Minimum of 15 notable commits.
-- **Server Side**: Minimum of 8 notable commits.
-
-## Additional Notes
-- No Lorem ipsum text is used.
-- Custom error and success messages are implemented using toast notifications.
-- Unique design that is not similar to any previous projects or examples.
-
 
 
 
