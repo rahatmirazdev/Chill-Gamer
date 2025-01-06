@@ -171,7 +171,7 @@ const Navbar = () => {
 										alt={user.displayName}
 										className="h-8 w-8 rounded-full mr-2"
 									/>
-									<p className="mr-4">{user?.email}</p>
+									<p className="">{user?.email}</p>
 									<button
 										className="btn rounded-none bg-primaryButton text-white border-none xl:hidden"
 										onClick={signOutUser}
