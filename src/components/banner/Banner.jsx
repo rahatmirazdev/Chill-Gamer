@@ -5,6 +5,7 @@ import bannerImgThree from "../../assets/banner/3.jpg";
 import { Link } from "react-router-dom";
 import { Fade } from "react-awesome-reveal";
 import { Typewriter } from "react-simple-typewriter";
+import { Element } from 'react-scroll';
 
 const Banner = () => {
   const images = [bannerImgOne, bannerImgTwo, bannerImgThree];
@@ -19,15 +20,12 @@ const Banner = () => {
   }, [images.length]);
 
   return (
-    <div className="relative w-full py-64 md:h-screen overflow-hidden">
-      <div className="absolute inset-0">
-        <img
-          src={images[currentImageIndex]}
-          alt="Banner"
-          className="w-full h-full object-cover"
-        />
-      </div>
-      <div className="relative z-10 flex flex-col justify-center items-center h-full text-center text-white ">
+    <Element name="banner-us-section" className="relative w-full py-64 overflow-auto">
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: `url(${images[currentImageIndex]})` }}
+      ></div>
+      <div className="relative flex flex-col justify-center items-center h-[70%] text-center text-white ">
         <div className="max-w-[1440px] mx-auto px-2">
           <Fade direction="right">
             <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
@@ -65,7 +63,7 @@ const Banner = () => {
           </Fade>
         </div>
       </div>
-    </div>
+    </Element>
   );
 };
 

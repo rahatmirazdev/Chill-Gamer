@@ -10,7 +10,9 @@ const MyReviews = () => {
 
 	useEffect(() => {
 		if (user) {
-			fetch(`https://chillgamerzz.vercel.app/my-reviews?email=${user.email}`)
+			fetch(
+				`https://chillgamerzz.vercel.app/my-reviews?email=${user.email}`
+			)
 				.then((response) => response.json())
 				.then((data) => setReviews(data));
 		}

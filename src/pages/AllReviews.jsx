@@ -1,6 +1,5 @@
 import { useLoaderData, NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
-import PropTypes from "prop-types";
 import Loader from "../components/Loader";
 
 const AllReviews = () => {
@@ -39,7 +38,7 @@ const AllReviews = () => {
 	}
 
 	return (
-		<div className="my-24 max-w-[1440px] mx-auto px-2 min-h-screen">
+		<div className="my-24 max-w-[1440px] mx-auto px-2 min-h-screen scroll-smooth">
 			<h2 className="text-3xl font-bold text-primaryText mt-8 mb-4">
 				All Reviews
 			</h2>
@@ -91,17 +90,8 @@ const AllReviews = () => {
 								<h3 className="text-xl font-bold text-primaryText mb-2">
 									{game.gameTitle}
 								</h3>
-								<ReviewDescription
-									description={game.reviewDescription}
-								/>
 								<p className="text-secondaryText mb-2">
 									Rating: {game.rating}
-								</p>
-								<p className="text-secondaryText mb-2">
-									Genre: {game.genre}
-								</p>
-								<p className="text-secondaryText mb-2">
-									Year: {game.publishingYear}
 								</p>
 							</div>
 							<NavLink
@@ -137,9 +127,6 @@ const ReviewDescription = ({ description }) => {
 			</p>
 		</div>
 	);
-};
-ReviewDescription.propTypes = {
-	description: PropTypes.string.isRequired,
 };
 
 export default AllReviews;

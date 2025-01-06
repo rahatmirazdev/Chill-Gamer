@@ -1,5 +1,4 @@
 import { TailSpin } from "react-loader-spinner";
-
 const Loader = () => {
 	return (
 		<div className="flex justify-center items-center min-h-screen">
