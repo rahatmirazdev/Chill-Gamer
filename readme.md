@@ -30,6 +30,7 @@ Chill Gamer provides a platform where users can browse, add, and manage reviews 
 
 - View all reviews with game details including:
     - Title, cover image, and description.
+    - Rating, genres, and publishing year.
     - Reviewer’s name and email.
 - Add and manage reviews:
     - Submit new reviews via a detailed form.
